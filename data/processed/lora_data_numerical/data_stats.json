@@ -1,0 +1,13 @@
+{
+  "total_examples": 246,
+  "train_examples": 221,
+  "test_examples": 25,
+  "train_high_quality": 66,
+  "train_low_quality": 155,
+  "test_high_quality": 7,
+  "test_low_quality": 18,
+  "score_range": [
+    0.0,
+    1.0
+  ]
+}

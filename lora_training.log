@@ -1,0 +1,21 @@
+2025-03-30 22:24:55,604 - __main__ - INFO - Training with seed: 42
+2025-03-30 22:24:55,604 - __main__ - INFO - Loading model: google/gemma-2-2b
+2025-03-30 22:24:55,622 - __main__ - INFO - Using Apple MPS (Metal Performance Shaders)
+2025-03-30 22:25:16,983 - __main__ - INFO - Model loaded successfully
+2025-03-30 22:25:17,869 - __main__ - INFO - Configuring LoRA
+2025-03-30 22:25:18,344 - __main__ - INFO - Training file: ./data/processed/lora_data/train.jsonl
+2025-03-30 22:25:18,344 - __main__ - INFO - Testing file: ./data/processed/lora_data/test.jsonl
+2025-03-30 22:25:18,344 - __main__ - ERROR - Error reading JSONL file ./data/processed/lora_data/train.jsonl: [Errno 2] No such file or directory: './data/processed/lora_data/train.jsonl'
+2025-03-30 22:25:18,345 - __main__ - ERROR - Failed to load data: [Errno 2] No such file or directory: './data/processed/lora_data/train.jsonl'
+2025-03-30 22:25:18,345 - __main__ - ERROR - Training failed with error: [Errno 2] No such file or directory: './data/processed/lora_data/train.jsonl'
+Traceback (most recent call last):
+  File "/Users/madiisa-real/Desktop/Kiko/site_classifier/src/train_lora.py", line 245, in train_lora
+    raise e
+  File "/Users/madiisa-real/Desktop/Kiko/site_classifier/src/train_lora.py", line 241, in train_lora
+    train_data = load_jsonl_data(train_file)
+  File "/Users/madiisa-real/Desktop/Kiko/site_classifier/src/train_lora.py", line 127, in load_jsonl_data
+    raise e
+  File "/Users/madiisa-real/Desktop/Kiko/site_classifier/src/train_lora.py", line 92, in load_jsonl_data
+    with open(file_path, 'r') as f:
+         ~~~~^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data/processed/lora_data/train.jsonl'
